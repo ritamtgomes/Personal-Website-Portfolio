@@ -1,0 +1,53 @@
+.text-white { color: var(--white); }
+.text-gray { color: var(--gray-text); }
+.text-pink { color: var(--pink); }
+.text-blue { color: var(--blue); }
+
+.hello {
+    font-size: 4.5em;
+    font-family: 'Orbitron', sans-serif;
+    text-align: right;
+    margin: 0px;
+}
+
+.titles {
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body, p {
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: 700;
+  font-size: 1.05em;
+}
+
+.subtitles {
+    font-size: 1.7em;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: 900;
+}
+
+.projects-text {
+    width: 1000px;
+    margin: 0, 20px;
+}
+
+.article-box h2 {
+    margin: 0 0 10px 0;
+    color: var(--blue);
+    font-size: 1.4em;
+}
+
+.article-box h3 {
+    margin: 0 0 15px 0;
+    font-weight: normal;
+}
+
+.article-box a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.article-box a:hover {
+    color: var(--blue);
+}

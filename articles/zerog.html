@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="article.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    <title>The Shift to 8.33 kHz Explained</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-left">
+                <a href="index.html#projects">
+                    <i class="bi bi-arrow-left"></i>
+                    Back
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="index.html#hero">About</a>
+                <a href="index.html#projects">More Articles</a>
+                <button class="theme-toggle">
+                    <i class="bi bi-brightness-high-fill"></i>
+                </button>
+            </div>
+        </nav>
+
+        <article class="article-content">
+            <h1 class="article-title">Taking Part in the first Zero-G Flight in Portugal</h1>
+            
+            <div class="article-header">
+                <div class="article-emoji">🧑‍🚀</div>
+                <div class="article-meta">
+                    <h2>An Overview of A Lifetime Experience</h2>
+                    <div class="byline">
+                        <span>Rita Gomes</span>
+                        <span>•</span>
+                        <span>September 12, 2025</span>
+                        <!-- <span>•</span>
+                        <div class="likes">
+                            <i class="bi bi-heart-fill"></i>
+                            <span>12</span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-body">
+
+                <p>As an Aviation nerd and radio communications enthusiast, I always enjoyed tuning my Airband radio to my local airport (LPPT) frequencies: tower, approach, ground, you name it. However, something wasn't adding up: when ATC said something like “contact tower 118.105” or “contact approach 119.105”, I couldn't hear a thing in those frequencies. Instead, I would hear the communications loud and clear on 118.000 MHz or 119.000 MHz. </p>
+
+                <p>What confused me even more were pilots reporting they would hear the controller perfectly when tuning the airplane radio to the .XX5 frequencies. So how could I not hear it, even using sophisticated radios with 1 Hz precision? Initially, I suspected it was related to the 8.33 kHz spacing used in aviation bands. But even applying that spacing, my receiver remained silent on the .005 channels.</p>
+
+                <p>Well, the spectrum analyzer doesn't lie, and what it showed was clear: for LPPT approach, aircraft and ATC were indeed communicating on 119.100 MHz, not on the 119.105 MHz pilots were instructed to use, as seen on the picture below. This pattern was also confirmed for the LPPT tower frequency and LPFR approach and ground, frequencies that theoretically should also end in .XX5 MHz:</p>
+
+                <p class="p-img">
+                    <img class="article-img" src="images/spectrum2.jpeg" alt="[spectrum analyzer]">
+                    <figcaption>Image of the spectrum analyzer for the LPPT Approach communications using the SDR-Control app for MacOS with a connected receiver (ICOM IC-R8600) - the communication is clearly happening at 119.100 and not on 119.105 MHz</figcaption>
+                </p> 
+
+                <h3>Selection Phases</h3>
+
+                <p></p>
+                <p></p>
+                <p></p>
+
+                <h3>Days before the flight and preparations</h3>
+
+                <p></p>
+                <p></p>
+                <p></p>
+
+                <h3>The flight</h3>
+
+                <p></p>
+                <p></p>
+                <p></p>
+                
+                <h3>Some thoughts</h3>
+
+            </div>
+        </article>
+
+        <footer>
+            <p class="footer-spacing"> <a href="home.html">About</a> | <a href="home.html#projects">Projetcs & Articles</a></p>
+            <p>Made by Rita Gomes © 2025</p>
+        </footer>
+    </div>
+</body>
+
+<script src="darkmode.js"></script>
+</html>

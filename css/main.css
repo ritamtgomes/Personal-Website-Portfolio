@@ -1,0 +1,13 @@
+@import url('vars.css');
+@import url('components.css');
+@import url('home.css');
+@import url('text.css');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
