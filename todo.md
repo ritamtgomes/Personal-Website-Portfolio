@@ -1,13 +1,14 @@
-# navbar
-- logo
-- fix padding / size
+# To-Do
 
-# hero 
+## navbar
+- fix dark mode toggle btn
+
+## hero 
 - add arrow
 
-# Projetcs & Articles
+## Projetcs & Articles
 - more to come box
 
-# contact
+## contact
 - resize / center
 - add links for linkdin and git

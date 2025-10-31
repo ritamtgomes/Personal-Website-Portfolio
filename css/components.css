@@ -1,20 +1,38 @@
 /* Reusable components */
 
+/* nav */
+
 #navbar {
     position: fixed;
     height: 8vh;
-    width: 100%;
     top: 0;
+    left: 0;
+    right: 0;
     background: rgba(44, 64, 130, 0.95);
     backdrop-filter: blur(10px);
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 0 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    vertical-align: middle;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     transition: padding 0.3s ease;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+    gap: 50px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
 
 #navbar a {
@@ -27,7 +45,34 @@
 
 .logo {
     font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.3em;
+    padding: 0;
+    margin: 0;
 }
+
+.theme-toggle {
+    background: none;
+    border: 2px solid rgba(107, 114, 128, 0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--gray-text);
+}
+
+.theme-toggle:hover {
+    border-color: var(--blue);
+    color: var(--blue);
+}
+
+
+/* footer */
 
 footer {
     background-color: var(--gray-sec);

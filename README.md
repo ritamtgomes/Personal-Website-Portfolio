@@ -11,26 +11,26 @@ The site includes:
 - **Articles** - Technical writeups and notes on aviation comms, space, RF, and cybersecurity
 - **Contact** - Ways to reach me
 
-## Tech Stack
+<!-- ## Tech Stack
 
 - HTML5, CSS3, JavaScript
 - Custom CSS with dark mode support
 - Bootstrap Icons
-- Google Fonts (Orbitron, Share Tech Mono, Inter)
+- Google Fonts (Orbitron, Share Tech Mono, Inter) -->
 
 ## Articles
 
-- [Are Aviation Communications Really on .XX5 MHz?](articles/aviation-comms.html) - Explaining the 8.33 kHz channel spacing mystery
+- [Are Aviation Communications Really on .XX5 MHz?](articles/aviationcomms.html) - Explaining the 8.33 kHz channel spacing mystery
+- [Floating with ESA Astronauts: How I took part in the first Zero-G Flight in Portugal](articles/zerog.html)
 - More coming soon...
 
 ## Structure
 ```
-├── index.html              # Home page
-├── articles/               # Article pages
-├── assets/
-│   ├── css/               # Stylesheets
-│   ├── js/                # Scripts (dark mode, etc)
-│   └── images/            # Images organized by section
+├── index.html         # Home page
+├── articles/          # Article pages
+├── css/               # Stylesheets
+├── js/                # Scripts 
+├── images/            
 └── README.md
 ```
 
@@ -38,11 +38,8 @@ The site includes:
 
 Just open `index.html` in your browser - no build process needed 
 
-## License
-
-© 2025 Rita Gomes. All rights reserved.
 
 ---
 
 **Callsign:** CS7BKH  
-**Interests:** Aviation • Space • RF Communications • Cybersecurity# Personal-Website-Portfolio
+**Interests:** Aviation • Space • RF Communications • Cybersecurity
