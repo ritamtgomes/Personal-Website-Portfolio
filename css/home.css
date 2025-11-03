@@ -20,14 +20,6 @@
     text-align: center;
 }
 
-#contact {
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-
 #text-container-hero {
     display: flex;
     flex-direction: column;
@@ -85,6 +77,8 @@
 }
 
 
+/* articles part */
+
 .article-box {
     display: flex;
     flex-direction: column;
@@ -102,8 +96,30 @@
 
 .article-box:hover {
     border: 3px solid var(--pink);
-    transform: translateY(-2px);
+    transform: translateX(5px);
     box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.article-box:hover h2 {
+    color: var(--pink);
+}
+
+
+.coming-soon {
+    background: rgba(255, 255, 255, 0.1);
+    border: 3px dashed var(--pink);
+    text-align: center;
+}
+
+.coming-soon:hover {
+    border: 3px dashed var(--pink);
+    transform: translateX(5px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.coming-soon p {
+    color: var(--pink);
+    font-size: 1.1rem;
 }
 
 .tags-box {
@@ -157,11 +173,77 @@
     border-color: rgba(232, 67, 147, 0.3);
 }
 
+
+/* contact */
+
+#contact {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#contact h1 {
+    margin: 35px 0;
+}
+
 .contact-card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 25px;
+}
+
+
+
+
+
+
+
+
+/* -------- dark mode -------- */
+
+body.dark-mode,
+body.dark-mode #about,
+/* body.dark-mode .article-box, */
+body.dark-mode .about-cards{
+    background: var(--darkmode-body);
+}
+
+body.dark-mode #contact p,
+body.dark-mode .about-text h2,
+body.dark-mode .about-text a,
+body.dark-mode #contact p {
+    color: var(--pink);
+}
+
+body.dark-mode h1,
+body.dark-mode #about p,
+body.dark-mode #contact a,
+body.dark-mode #contact i, 
+body.dark-mode .about-text li,
+body.dark-mode .article-box h2,
+body.dark-mode .article-box h3 {
+    color: var(--white);
+}
+
+body.dark-mode footer, 
+body.dark-mode .article-box {
+    background: var(--gray-sec);
+}
+
+body.dark-mode .article-box:hover h2 {
+    color: var(--pink);
+}
+
+body.dark-mode #about p,
+body.dark-mode #about li,
+body.dark-mode #about a {
+    font-weight: 500;
 }
 
 

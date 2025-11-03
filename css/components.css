@@ -1,4 +1,4 @@
-/* Reusable components */
+/* Reusable components - nav and footer*/
 
 /* nav */
 
@@ -54,7 +54,7 @@
 
 .theme-toggle {
     background: none;
-    border: 2px solid rgba(107, 114, 128, 0.2);
+    border: 2px solid rgb(255, 181, 232, 0.7);
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -63,7 +63,7 @@
     justify-content: center;
     cursor: pointer;
     transition: all 0.2s;
-    color: var(--gray-text);
+    color: var(--pink, );
 }
 
 .theme-toggle:hover {
@@ -83,7 +83,6 @@ footer {
     justify-content: center;
     color: var(--white);
     text-align: center;
-    margin-top: 4rem;
 }
 
 footer p, footer a{
