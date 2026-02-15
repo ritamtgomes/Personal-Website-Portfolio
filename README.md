@@ -42,4 +42,4 @@ Just open `index.html` in your browser - no build process needed
 ---
 
 **Callsign:** CS7BKH  
-**Interests:** Aviation • Space • RF Communications • Cybersecurity
+**Interests:** Aviation • Space • RF Communications • Tech • Cybersecurity
