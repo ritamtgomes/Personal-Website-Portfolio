@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/article.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,22 +18,43 @@
 
 
 <body>
+
+    <nav id="navbar">
+        <a class="logo" href="../index.html">rgaero</a>
+        <div class="nav-right">
+            <button class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-list" id="nav-menu">
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../index.html#projects" class="nav-link">Articles</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle">
+                <i class="bi bi-brightness-high-fill"></i>
+            </button>
+        </div>
+    </nav>
+
     <div class="container">
-        <nav>
+
+        <!-- <nav>
             <div class="nav-left">
-                <a href="home.html#projects">
+                <a href="../index.html#projects">
                     <i class="bi bi-arrow-left"></i>
                     Back
                 </a>
             </div>
             <div class="nav-right">
-                <a href="home.html#hero">About</a>
-                <a href="home.html#projects">More Articles</a>
+                <a href="../index.html#hero">About</a>
+                <a href="../index.html#projects">More Articles</a>
                 <button class="theme-toggle">
                     <i class="bi bi-brightness-high-fill"></i>
                 </button>
             </div>
-        </nav>
+        </nav> -->
 
         <article class="article-content">
             <h1 class="article-title">Are Aviation Communications Really on .XX5 MHz? The Shift to 8.33 kHz Explained</h1>
@@ -46,11 +67,6 @@
                         <span>Rita Gomes</span>
                         <span>•</span>
                         <span>September 12, 2025</span>
-                        <!-- <span>•</span>
-                        <div class="likes">
-                            <i class="bi bi-heart-fill"></i>
-                            <span>12</span>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -64,7 +80,7 @@
                 <p>Well, the spectrum analyzer doesn't lie, and what it showed was clear: for LPPT approach, aircraft and ATC were indeed communicating on 119.100 MHz, not on the 119.105 MHz pilots were instructed to use, as seen on the picture below. This pattern was also confirmed for the LPPT tower frequency and LPFR approach and ground, frequencies that theoretically should also end in .XX5 MHz.</p>
 
                 <p class="p-img">
-                    <img class="article-img" src="images/spectrum2.jpeg" alt="[spectrum analyzer]">
+                    <img class="article-img" src="../images/spectrum2.jpeg" alt="[spectrum analyzer]">
                     <figcaption>Image of the spectrum analyzer for the LPPT Approach communications using the SDR-Control app for MacOS with a connected receiver (ICOM IC-R8600) - the communication is clearly happening at 119.100 and not on 119.105 MHz</figcaption>
                 </p> 
 
@@ -81,21 +97,21 @@
                 <p>Traditional aviation radios used 25 kHz spacing, with frequencies like 118.000, 118.025, 118.050 MHz, and so on. As air traffic grew, more channels were needed, so a narrower 8.33 kHz spacing was introduced in Europe, allowing three separate channels to fit in the same space that previously held just one 25 kHz channel (since 3 × 8.33 ≈ 25) However, the displayed channel is not the literal transmitted frequency, and the aircraft radio automatically shifts the transmission to the actual frequency using appropriate RF filtering. The diagram below illustrates this situation: </p>
 
                 <p class="p-img">
-                    <img class="article-img" src="images/spacing.png" alt="[8.33 kHz spacing diagram]">
+                    <img class="article-img" src="../images/spacing.png" alt="[8.33 kHz spacing diagram]">
                     <figcaption>Comparison between 25 KHz and 8.33 kHz Channels</figcaption>
                 </p> 
 
                 <p>Because of the 8.33 kHz spacing, some frequencies wouldn’t be practical to type, as 118.0166 MHz, and a mistake could mean interfering with another communication. So, in this case, the real frequency is 118.0166 and the channel used is 118.015. Another example is a true frequency of 118.025 translated to the channel 118.030. Here’s a table of correspondence between some channels and frequencies: </p>
 
                 <p class="p-img">
-                    <img class="article-img" src="images/table.png" alt="[table of correspondence between channels and frequencies]">
+                    <img class="article-img" src="../images/table.png" alt="[table of correspondence between channels and frequencies]">
                     <figcaption>Channel–frequency correspondence under 8.33 kHz spacing</figcaption>
                 </p>
 
                 <p>As shown in the spectrum analyzer image previously presented, the transmitted signal only occupies about 4 kHz of bandwidth, roughly 2 kHz above and below the carrier frequency. This explains why I was unable to hear anything on frequencies like 118.105 since those 5 extra kHz were out of that range. Even with a higher bandwidth set on the radio, let’s say 10 kHz, you might hear something on 118.105, but it won’t be clear enough since widening the bandwidth increases noise and attenuation thus decreasing the quality of the received signal, making it even harder to understand what is said.</p>
 
                 <p class="p-img">
-                    <img class="article-img-small" src="images/diagram2.png" alt="[bandwidth diagram]">
+                    <img class="article-img-small" src="../images/diagram2.png" alt="[bandwidth diagram]">
                     <figcaption>Diagram of the signal bandwidth around the carrier frequency for 118.100 MHz (LPPT Tower)</figcaption>
                 </p>
 
@@ -111,12 +127,12 @@
 
                 <!-- o end-spacing n esta a dar -->
                 <h4 class="end-spacing">Sources consulted:</h4>
-                <li>CAA: <a href="https://skybrary.aero/sites/default/files/bookshelf/34196.pdf">Conversion from 25 kHz to 8.33 kHz channel spacing</a></li>
-                <li>Eurocontrol: <a href="https://www.eurocontrol.int/function/833-khz-implementation-support">8.33 kHz Implementation Support</a></li>
-                <li>Eurocontrol: <a href="https://www.eurocontrol.int/sites/default/files/publication/files/201707-8.33-vcs-user-handbook%201.1.pdf">8.33 kHz VCS Implementation Handbook</a></li>
+                <li class="source">CAA: <a href="https://skybrary.aero/sites/default/files/bookshelf/34196.pdf">Conversion from 25 kHz to 8.33 kHz channel spacing</a></li>
+                <li class="source">Eurocontrol: <a href="https://www.eurocontrol.int/function/833-khz-implementation-support">8.33 kHz Implementation Support</a></li>
+                <li class="source">Eurocontrol: <a href="https://www.eurocontrol.int/sites/default/files/publication/files/201707-8.33-vcs-user-handbook%201.1.pdf">8.33 kHz VCS Implementation Handbook</a></li>
 
                 <!-- adicionar os links -->
-                <h4>Share this:</h4>
+                <h4 class="end-spacing">Share this:</h4>
                 <div class="share-logos">
                     <a href="https://twitter.com/intent/tweet?text=Are Aviation Communications Really on .XX5 MHz?&url=https://yoursite.com/articles/aviationcomms.html" target="_blank" rel="noopener noreferrer" title="Share on X/Twitter">
                         <i class="bi bi-twitter-x"></i>
@@ -137,12 +153,18 @@
             </div>
         </article>
 
-        <footer>
-            <p class="footer-spacing"> <a href="index.html">About</a> | <a href="home.html#projects">Projetcs & Articles</a></p>
+        <!-- <footer>
+            <p class="footer-spacing"> <a href="../index.html">About</a> | <a href="../home.html#projects">Projetcs & Articles</a></p>
             <p>Made by Rita Gomes © 2025</p>
-        </footer>
+        </footer> -->
     </div>
 </body>
 
-<script src="darkmode.js"></script>
+<footer>
+    <p class="text-white"> <a class="text-white" href="../index.html#about">About</a> | <a class="text-white" href="../index.html#projects">Projetcs & Articles</a></p>
+    <p class="text-white">© 2025 Rita Gomes. All rights reserved.</p>
+</footer>
+
+<script src="/js/darkmode.js"></script>
+<script src="/js/nav.js"></script>
 </html>

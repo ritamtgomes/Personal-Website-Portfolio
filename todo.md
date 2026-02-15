@@ -1,14 +1,19 @@
 # To-Do
 
 ## navbar
-- fix dark mode toggle btn
+
+## footer
 
 ## hero 
-- add arrow
+- fix spacing mobile
+
+## about 
 
 ## Projetcs & Articles
-- more to come box
 
 ## contact
-- resize / center
-- add links for linkdin and git
+
+## articles
+- progress line
+
+after all of this test on ipad

@@ -1,3 +1,5 @@
+
+
 #hero {
     height: 100vh;
     background-color: var(--blue);
@@ -44,13 +46,17 @@
     height: 400px;
     object-fit: cover;
     border-radius: 10px;
-    margin-top: 5vh;
+    margin-top: 15px;
 }
 
 .about-text {
     display: flex;
     flex-direction: column;
     width: 900px;
+}
+
+.about-text li {
+    margin-left: 20px;
 }
 
 .about-cards {
@@ -106,7 +112,7 @@
 
 
 .coming-soon {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
     border: 3px dashed var(--pink);
     text-align: center;
 }
@@ -114,7 +120,7 @@
 .coming-soon:hover {
     border: 3px dashed var(--pink);
     transform: translateX(5px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
 .coming-soon p {
@@ -346,6 +352,9 @@ body.dark-mode #about a {
 @media (max-width: 900px) and (min-width: 481px) {
     #hero {
         height: 90vh;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
     }
 
     .hello {
@@ -363,6 +372,7 @@ body.dark-mode #about a {
         width: 500px;
         height: 420px;
         object-fit: cover;
+        margin-top: -20px;
     }
 
     .about-text {
@@ -395,42 +405,50 @@ body.dark-mode #about a {
 
 /* ----- IPHONE ----- */
 @media (max-width: 480px) {
+
+    html{
+        color: var(--darkmode-body);
+    }
+
     #hero{
-        height: 90vh;
+        height: 110vh;
         text-align: center;
+        flex-direction: column;
     }
 
     #text-container-hero {
         width: 100%;
         max-width: 600px;
         text-align: center;
+        margin-top: 8vh;
+    }
+
+    .afterhello {
+        margin-top: 3vh;
+        text-align: center;
     }
 
     .image-hero {
-        width: 300px;
-        height: 350px;
+        width: 310px;
+        height: 320px;
         object-fit: cover;
+        margin-bottom: 30px;
+        margin-top: -10px !important;
     }
 
     #about {
-        min-height: 400vh;
-    }
-
-    body, p {
-      font-family: 'Share Tech Mono', monospace;
-      font-weight: 600;
-      font-size: 1.0em;
+        min-height: 415vh;
     }
 
     .about-cards {
         height: 120vh;
         text-align: left;
         max-width: 380px;
+        padding: 20px;
     }
 
-    .hello {
-        text-align: center;
-        font-size: 3.5em;
+    .about-text li {
+        margin-left: 15px;
     }
 
     .contact-card {
@@ -445,24 +463,21 @@ body.dark-mode #about a {
         align-items: center;
     }
 
-    .projects-text {
-        width: 340px;
-        margin: 0px, 20px;
-        text-align: center;
-    }
-
     .article-box {
         min-height: 35vh;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: left;
+        width: 280px;
     }
     
     .tags-box {
         flex-wrap: wrap;       
         gap: 0.5rem;           
         max-width: 100%;
+        display: flex;
+        align-items: center;
     }
 
     .tags {
@@ -471,6 +486,13 @@ body.dark-mode #about a {
 
     #contact {
         text-align: center;
+        height: 80vh;
+    }
+
+    body.dark-mode #about p,
+    body.dark-mode #about li,
+    body.dark-mode #about a {
+    font-weight: 600;
     }
 
 }

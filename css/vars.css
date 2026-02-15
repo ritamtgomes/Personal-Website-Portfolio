@@ -2,6 +2,7 @@
     --blue: #1e3a8a;
     --pink: #ffb5e8;
     --white: #f9f9f9;
+    --light-gray: #e9ecef;
     --gray-text: #333333;
     --gray-sec: #1f252f; 
     --darkmode-body: #111827;
@@ -9,10 +10,6 @@
     --font-big: 'Orbitron', sans-serif;
     --font-body: 'Share Tech Mono', monospace;
     --font-article: 'Inter', -apple-system, sans-serif;
-}
-
-.text-white {
-    color: var(--white);
 }
 
 

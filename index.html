@@ -15,12 +15,17 @@
 <body>
 
     <nav id="navbar">
-        <a class="logo" href="#">rgaero</a>
+        <a class="logo" href="index.html">rgaero</a>
         <div class="nav-right">
-            <ul class="nav-list">
-                <a href="#about">About</a>
-                <a href="#projects">Articles</a>
-                <a href="#contact">Contact</a>
+            <button class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-list" id="nav-menu">
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../index.html#projects" class="nav-link">Articles</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
             </ul>
             <button class="theme-toggle">
                 <i class="bi bi-brightness-high-fill"></i>
@@ -56,7 +61,7 @@
             <div class="about-text">
                 <h2 class="text-blue subtitles">RED Rocketery Team Member</h2>
                 <p class="text-gray">Part of <a href="https://aerotec.pt/red">RED</a> (Rocket Experiment Division) team at IST, which competes in the annual EuRoC competition, as a member of two subteams:  
-                <li class="text-gray">Electronics team - learned PCB design, worked on the link budget for communications, and contributed to the development of the Ground Station graphical interface.</li>
+                <li class="text-gray">Electronics team - PCB design, link budget for communications, and development of the Ground Station graphical interface.</li>
                 <li class="text-gray">Safety team - responsible team for developing checklists for launch days and static fires, plus performing hazard identification and risk analysis.</li>
             </div>
         </div>
@@ -131,4 +136,5 @@
 
 
 <script src="js/darkmode.js"></script>
+<script src="js/nav.js"></script>
 </html>

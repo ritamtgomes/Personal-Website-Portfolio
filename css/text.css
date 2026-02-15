@@ -4,7 +4,7 @@
 .text-blue { color: var(--blue); }
 
 .hello {
-    font-size: 4.5em;
+    font-size: 4.5em; 
     font-family: 'Orbitron', sans-serif;
     text-align: right;
     margin: 0px;
@@ -50,4 +50,25 @@ body, p {
 
 .article-box a:hover {
     color: var(--blue);
+}
+
+
+@media (max-width: 480px) {
+    body, p {
+      font-family: 'Share Tech Mono', monospace;
+      font-weight: 600;
+      font-size: 1.0em;
+    }
+
+    .hello {
+        text-align: center;
+        font-size: 3.5em;
+        margin-top: 45px;
+    }
+
+    .projects-text {
+        width: 340px;
+        margin: 0px, 20px;
+        text-align: justify;
+    }
 }
