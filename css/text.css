@@ -17,12 +17,12 @@
 
 body, p {
   font-family: 'Share Tech Mono', monospace;
-  font-weight: 700;
-  font-size: 1.05em;
+  font-weight: 600;
+  font-size: 1.0em;
 }
 
 .subtitles {
-    font-size: 1.7em;
+    font-size: 1.6em;
     font-family: 'Share Tech Mono', monospace;
     font-weight: 900;
 }

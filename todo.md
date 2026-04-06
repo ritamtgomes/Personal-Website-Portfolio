@@ -1,11 +1,19 @@
 # To-Do
 
+# before first launch:
+[] fix text size and weight for opera and chrome 
+[] fix the what i do sections size and image size
+[] add student pilot mention in first section
+[] create a new branch without articles -  only one rectangle saying coming soon...
+[] redo every text / paragraph / rewrite everything
+[] change the tech section image
+
 ## navbar
 
 ## footer
 
 ## hero 
-- fix spacing mobile
+[] fix spacing mobile
 
 ## about 
 
@@ -14,6 +22,6 @@
 ## contact
 
 ## articles
-- progress line
+[]  progress line
 
-after all of this test on ipad
+[] after all of this test on ipad
