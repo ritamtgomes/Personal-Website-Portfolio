@@ -17,9 +17,12 @@
 }
 
 #projects {
-    height: 100vh;
+    height: 90vh;
     background-color: var(--blue);
     text-align: center;
+    gap: 5vh;
+    text-align: center;
+    justify-content: center;
 }
 
 #text-container-hero {
@@ -115,6 +118,8 @@
     background: rgba(255, 255, 255, 0.05);
     border: 3px dashed var(--pink);
     text-align: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .coming-soon:hover {
@@ -411,7 +416,7 @@ body.dark-mode #about a {
     }
 
     #hero{
-        height: 110vh;
+        height: 120vh;
         text-align: center;
         flex-direction: column;
     }
@@ -458,13 +463,13 @@ body.dark-mode #about a {
     }
 
     #projects {
-        min-height: 180vh;
-        text-align: center;
-        align-items: center;
+        min-height: 100vh;
+        text-align: left;
+        align-items: left;
     }
 
     .article-box {
-        min-height: 35vh;
+        min-height: 15vh;
         display: flex;
         align-items: center;
         justify-content: center;

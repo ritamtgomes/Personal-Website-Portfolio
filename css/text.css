@@ -30,12 +30,13 @@ body, p {
 .projects-text {
     width: 1000px;
     margin: 0, 20px;
+    font-size: 1.2em;
 }
 
 .article-box h2 {
     margin: 0 0 10px 0;
     color: var(--blue);
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 .article-box h3 {
