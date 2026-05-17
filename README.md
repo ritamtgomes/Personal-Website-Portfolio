@@ -1,45 +1,43 @@
-# Rita Gomes - Personal Portfolio
+# rgaero.space
 
 Source code for my personal website and portfolio.
 
 ## About
 
-This is where I share my journey as an Aerospace Engineering student at Instituto Superior Técnico, with a focus on Avionics, telecommunications, and aviation.
+This is where I share my journey as an Aerospace Engineering student at Instituto Superior Técnico.
 
-The site includes:
-- **What I do** - My involvement in aviation, rocketry, amateur radio, and tech
-- **Articles** - Technical writeups and notes on aviation comms, space, RF, and cybersecurity
-- **Contact** - Ways to reach me
+The website includes:
+- **Projects** - My involvement in aviation, rocketry, amateur radio, and tech
+- **Write-ups & Notes** (Still under development, coming soon)
+- **Contact & Social Media** - Ways to get in touch
 
-<!-- ## Tech Stack
+## Tech Stack
 
-- HTML5, CSS3, JavaScript
-- Custom CSS with dark mode support
+Built with:
+
+- HTML5, CSS, JavaScript
 - Bootstrap Icons
-- Google Fonts (Orbitron, Share Tech Mono, Inter) -->
-
-## Articles
-
-- [Are Aviation Communications Really on .XX5 MHz?](articles/aviationcomms.html) - Explaining the 8.33 kHz channel spacing mystery
-- [Floating with ESA Astronauts: How I took part in the first Zero-G Flight in Portugal](articles/zerog.html)
-- More coming soon...
+- Google Fonts (Orbitron, Share Tech Mono)
 
 ## Structure
 ```
-├── index.html         # Home page
-├── articles/          # Article pages
-├── css/               # Stylesheets
-├── js/                # Scripts 
-├── images/            
-└── README.md
+.
+├── css/            # Styles
+├── images/         # images used
+├── index.html      # Home page
+├── js/             # Scripts              
+├── README.md
+└── todo.md         # To-Do list and ideas
 ```
 
 ## Local Development
 
-Just open `index.html` in your browser - no build process needed 
+Just open `index.html` in your browser - no build process needed.
+
+This website will eventually be available at rgaero.space, currently still a work in progress while surviving exam season :)
 
 
 ---
 
-**Callsign:** CS7BKH  
-**Interests:** Aviation • Space • RF Communications • Tech • Cybersecurity
+**Amateur Radio Callsign:** CS7BKH  
+**Interests:** Aviation • Space • RF Communications • Tech • Embedded Systems • Cybersecurity
