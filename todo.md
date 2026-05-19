@@ -7,7 +7,7 @@
 [] add student pilot mention in first section
 [X] create a new branch without articles -  only one rectangle saying coming soon...
 [] redo every text / paragraph / rewrite everything
-[] change the tech section image
+[] change the tech section imag
 
 ## navbar
 
@@ -15,6 +15,9 @@
 
 ## hero 
 [] fix spacing mobile
+[] add cv btn
+
+
 
 ## about 
 
