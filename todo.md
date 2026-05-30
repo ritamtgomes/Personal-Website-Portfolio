@@ -2,7 +2,7 @@
 
 # before first launch:
 [X] fix text size and weight for opera and chrome 
-[] fix phone breakpoints
+[X] fix phone breakpoints
 [X] fix the what i do sections size and image size
 [X] add student pilot mention in first section
 [X] create a new branch without articles -  only one rectangle saying coming soon...
@@ -14,8 +14,8 @@
 ## footer
 
 ## hero 
-[] fix spacing mobile
-[] add cv btn
+[ ] fix spacing mobile
+[ ] add cv btn
 
 
 
@@ -26,6 +26,5 @@
 ## contact
 
 ## articles
-[]  progress line
-
-[] after all of this test on ipad
+[ ] progress line
+[ ] after all of this test on ipad

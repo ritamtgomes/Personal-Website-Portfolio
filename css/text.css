@@ -60,9 +60,14 @@ body, p {
 
 
 @media (max-width: 480px) {
+
+    #writeups h1 {
+        width: 300px;
+    }
+
     body, p {
       font-family: 'Share Tech Mono', monospace;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 1.0em;
     }
 
@@ -76,6 +81,11 @@ body, p {
         width: 85%;
         max-width: 340px;
         margin: 0 20px;
-        text-align: justify;
+        text-align: left;
+    }
+
+    .titles {
+        text-align: center;
+        width: 300px;
     }
 }

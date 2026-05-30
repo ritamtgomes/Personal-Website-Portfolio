@@ -11,12 +11,12 @@
     padding: 0 30px;
 }
 
-#about {
+#projects {
     height: 150vh;
     background-color: var(--white);
 }
 
-#projects {
+#writeups {
     height: 90vh;
     background-color: var(--blue);
     text-align: center;
@@ -216,7 +216,7 @@
 /* -------- dark mode -------- */
 
 body.dark-mode,
-body.dark-mode #about,
+body.dark-mode #projects,
 /* body.dark-mode .article-box, */
 body.dark-mode .about-cards{
     background: var(--darkmode-body);
@@ -230,7 +230,7 @@ body.dark-mode #contact p {
 }
 
 body.dark-mode h1,
-body.dark-mode #about p,
+body.dark-mode #projects p,
 body.dark-mode #contact a,
 body.dark-mode #contact i, 
 body.dark-mode .about-text li,
@@ -248,9 +248,9 @@ body.dark-mode .article-box:hover h2 {
     color: var(--pink);
 }
 
-body.dark-mode #about p,
-body.dark-mode #about li,
-body.dark-mode #about a {
+body.dark-mode #projects p,
+body.dark-mode #projects li,
+body.dark-mode #projects a {
     font-weight: 500;
 }
 
@@ -338,7 +338,7 @@ body.dark-mode #about a {
         text-align: justify;
     }
 
-    #about {
+    #projects {
         height: auto;
         min-height: 0;
         justify-content: center;
@@ -353,7 +353,7 @@ body.dark-mode #about a {
         height: 72vh;
     }
 
-    #projects {
+    #writeups {
         min-height: 90vh;
     }
 
@@ -406,7 +406,7 @@ body.dark-mode #about a {
         text-align: justify;
     }
 
-    #about {
+    #projects {
         height: auto;
         min-height: 0;
         justify-content: center;
@@ -421,7 +421,7 @@ body.dark-mode #about a {
         height: 72vh;
     }
 
-    #projects {
+    #writeups {
         min-height: 90vh;
     }
 
@@ -451,18 +451,19 @@ body.dark-mode #about a {
     }
 
     #hero{
-        min-height: 115vh;
+        min-height: 100vh;
         text-align: center;
         flex-direction: column;
-        gap: 15px;
-        padding-top: 12vh;
+        gap: 30px;
+        padding: 10vh 30px 5vh;
     }
 
     #text-container-hero {
         width: 100%;
         max-width: 600px;
         text-align: center;
-        margin-top: 2vh;
+        margin-top: 0;
+        height: auto;
     }
 
     .afterhello {
@@ -474,11 +475,10 @@ body.dark-mode #about a {
         width: 280px;
         height: 290px;
         object-fit: cover;
-        margin-bottom: 15px;
-        margin-top: 0;
+        margin: 0;
     }
 
-    #about {
+    #projects {
         min-height: 415vh;
     }
 
@@ -499,19 +499,22 @@ body.dark-mode #about a {
         justify-content: center;
     }
 
-    #projects {
+    #writeups {
         min-height: 100vh;
-        text-align: left;
-        align-items: left;
+        text-align: center;
     }
 
     .article-box {
-        min-height: 15vh;
+        min-height: 18vh;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: left;
-        width: 280px;
+        width: 85%;
+        max-width: 340px;
+        margin: 20px;
+        box-sizing: border-box;
+        padding: 15px;
     }
     
     .tags-box {
@@ -531,9 +534,9 @@ body.dark-mode #about a {
         height: 80vh;
     }
 
-    body.dark-mode #about p,
-    body.dark-mode #about li,
-    body.dark-mode #about a {
+    body.dark-mode #projects p,
+    body.dark-mode #projects li,
+    body.dark-mode #projects a {
     font-weight: 600;
     }
 

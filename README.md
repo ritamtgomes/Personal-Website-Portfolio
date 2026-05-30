@@ -34,7 +34,9 @@ Built with:
 
 Just open `index.html` in your browser, no build process needed.
 
-This website will eventually be available at rgaero.space - currently still a work in progress while trying to survive exam season :)
+The website is live at [rgaero.space](https://rgaero.space)
+
+Articles and write-ups are still on the way, currently still a work in progress while trying to survive exam season :)
 
 
 ---
