@@ -17,8 +17,8 @@
 
 body, p {
   font-family: 'Share Tech Mono', monospace;
-  font-weight: 600;
-  font-size: 1.0em;
+  font-weight: 500;
+  font-size: 1em;
 }
 
 .subtitles {
@@ -27,16 +27,21 @@ body, p {
     font-weight: 900;
 }
 
+.about-text li {
+    margin-left: 20px;
+}
+
 .projects-text {
     width: 1000px;
     margin: 0, 20px;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    font-weight: 500;
 }
 
 .article-box h2 {
     margin: 0 0 10px 0;
     color: var(--blue);
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .article-box h3 {
@@ -68,8 +73,9 @@ body, p {
     }
 
     .projects-text {
-        width: 340px;
-        margin: 0px, 20px;
+        width: 85%;
+        max-width: 340px;
+        margin: 0 20px;
         text-align: justify;
     }
 }

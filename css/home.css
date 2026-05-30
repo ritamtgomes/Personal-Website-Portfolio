@@ -58,9 +58,6 @@
     width: 900px;
 }
 
-.about-text li {
-    margin-left: 20px;
-}
 
 .about-cards {
     display: flex;
@@ -271,6 +268,10 @@ body.dark-mode #about a {
         flex-direction: column;
         text-align: center;
     }
+
+    .hello {
+        text-align: center;
+    }
     
     #text-container-hero {
         width: 100%;
@@ -306,7 +307,8 @@ body.dark-mode #about a {
 
 @media (max-width: 1024px) and (min-width: 901px) {
     #hero {
-        height: 100vh;
+        min-height: 100vh;
+        flex-direction: column;
     }
 
     .hello {
@@ -324,10 +326,12 @@ body.dark-mode #about a {
         width: 500px;
         height: 400px;
         object-fit: cover;
+        margin-top: 0;
     }
 
     .about-text {
-        width: 640px;
+        width: 85%;
+        max-width: 750px;
     }
 
     .about-text p {
@@ -335,7 +339,18 @@ body.dark-mode #about a {
     }
 
     #about {
-        min-height: 260vh;
+        height: auto;
+        min-height: 0;
+        justify-content: center;
+    }
+
+    .about-cards {
+        min-height: 420px;
+        padding: 50px 40px;
+    }
+
+    #contact {
+        height: 72vh;
     }
 
     #projects {
@@ -343,20 +358,22 @@ body.dark-mode #about a {
     }
 
     .projects-text {
-        width: 700px;
-        margin: 0, 20px;
+        width: 85%;
+        max-width: 750px;
+        margin: 0 20px;
         text-align: justify;
     }
 
     .article-box {
         text-align: left;
-        width: 640px;
+        width: 85%;
+        max-width: 750px;
     }
 }
 
 @media (max-width: 900px) and (min-width: 481px) {
     #hero {
-        height: 90vh;
+        min-height: 90vh;
         flex-direction: column;
         align-items: center;
         gap: 40px;
@@ -377,11 +394,12 @@ body.dark-mode #about a {
         width: 500px;
         height: 420px;
         object-fit: cover;
-        margin-top: -20px;
+        margin-top: 0;
     }
 
     .about-text {
-        width: 640px;
+        width: 85%;
+        max-width: 600px;
     }
 
     .about-text p {
@@ -389,7 +407,18 @@ body.dark-mode #about a {
     }
 
     #about {
-        min-height: 260vh;
+        height: auto;
+        min-height: 0;
+        justify-content: center;
+    }
+
+    .about-cards {
+        min-height: 420px;
+        padding: 50px 40px;
+    }
+
+    #contact {
+        height: 72vh;
     }
 
     #projects {
@@ -397,14 +426,16 @@ body.dark-mode #about a {
     }
 
     .projects-text {
-        width: 700px;
-        margin: 0, 20px;
+        width: 85%;
+        max-width: 600px;
+        margin: 0 20px;
         text-align: justify;
     }
 
     .article-box {
         text-align: left;
-        width: 640px;
+        width: 85%;
+        max-width: 600px;
     }
 }
 
@@ -415,17 +446,23 @@ body.dark-mode #about a {
         color: var(--darkmode-body);
     }
 
+    .section {
+        padding: 60px 25px;
+    }
+
     #hero{
-        height: 120vh;
+        min-height: 115vh;
         text-align: center;
         flex-direction: column;
+        gap: 15px;
+        padding-top: 12vh;
     }
 
     #text-container-hero {
         width: 100%;
         max-width: 600px;
         text-align: center;
-        margin-top: 8vh;
+        margin-top: 2vh;
     }
 
     .afterhello {
@@ -434,11 +471,11 @@ body.dark-mode #about a {
     }
 
     .image-hero {
-        width: 310px;
-        height: 320px;
+        width: 280px;
+        height: 290px;
         object-fit: cover;
-        margin-bottom: 30px;
-        margin-top: -10px !important;
+        margin-bottom: 15px;
+        margin-top: 0;
     }
 
     #about {
