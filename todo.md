@@ -1,13 +1,13 @@
 # To-Do
 
 # before first launch:
-[] fix text size and weight for opera and chrome 
-[] fix phone breakpoints for articles section
-[] fix the what i do sections size and image size
-[] add student pilot mention in first section
+[X] fix text size and weight for opera and chrome 
+[] fix phone breakpoints
+[X] fix the what i do sections size and image size
+[X] add student pilot mention in first section
 [X] create a new branch without articles -  only one rectangle saying coming soon...
-[] redo every text / paragraph / rewrite everything
-[] change the tech section imag
+[X] redo every text / paragraph / rewrite everything
+[X] change the tech section imag
 
 ## navbar
 
