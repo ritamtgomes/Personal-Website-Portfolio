@@ -26,5 +26,4 @@
 ## contact
 
 ## articles
-[ ] progress line
 [ ] after all of this test on ipad

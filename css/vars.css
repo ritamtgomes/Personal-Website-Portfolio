@@ -10,7 +10,9 @@
     --font-big: 'Orbitron', sans-serif;
     --font-body: 'Share Tech Mono', monospace;
     --font-article: 'Inter', -apple-system, sans-serif;
+
+    /* spacing */
+    --section-padding-x: clamp(20px, 4vw, 60px);
+    --section-padding-y: 60px;
+    --content-max-width: 960px;
 }
-
-
-/* #1034a6 30, 58, 138 */

@@ -4,7 +4,7 @@
 .text-blue { color: var(--blue); }
 
 .hello {
-    font-size: 4.5em; 
+    font-size: 3.8em; 
     font-family: 'Orbitron', sans-serif;
     text-align: right;
     margin: 0px;
@@ -13,6 +13,7 @@
 .titles {
     font-size: 2rem;
     font-family: 'Orbitron', sans-serif;
+    text-align: center  ;
 }
 
 body, p {
@@ -32,20 +33,20 @@ body, p {
 }
 
 .projects-text {
-    width: 1000px;
-    margin: 0, 20px;
+    width: 100%;
+    margin: 0;
     font-size: 1.1em;
     font-weight: 500;
 }
 
 .article-box h2 {
-    margin: 0 0 10px 0;
+    margin: 0 0 12px 0;
     color: var(--blue);
     font-size: 1.1em;
 }
 
 .article-box h3 {
-    margin: 0 0 15px 0;
+    margin: 0 0 12px 0;
     font-weight: normal;
 }
 
@@ -78,9 +79,7 @@ body, p {
     }
 
     .projects-text {
-        width: 85%;
-        max-width: 340px;
-        margin: 0 20px;
+        margin: 0;
         text-align: left;
     }
 

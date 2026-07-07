@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article - rgaero</title>
+    <link rel="stylesheet" href="../css/article.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+    <main class="article-container" id="content">
+        <a class="back-link" href="../index.html">&larr; rgaero.space</a>
+        <div id="markdown"></div>
+    </main>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const file = params.get('file') || 'template.md';
+
+        fetch(file)
+            .then(r => {
+                if (!r.ok) throw new Error('Failed to load ' + file);
+                return r.text();
+            })
+            .then(md => {
+                document.getElementById('markdown').innerHTML = marked.parse(md);
+                const h1 = document.querySelector('#markdown h1');
+                if (h1) {
+                    document.title = h1.textContent + ' - rgaero';
+                }
+                const meta = document.querySelector('#markdown p');
+                if (meta && meta.textContent.includes('|')) {
+                    meta.classList.add('article-meta');
+                }
+            })
+            .catch(err => {
+                document.getElementById('markdown').innerHTML =
+                    '<p style="color: var(--pink);">Could not load article. <a href="../index.html">Go back</a></p>';
+            });
+    </script>
+
+</body>
+</html>
